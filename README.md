@@ -21,17 +21,11 @@ It allows you to add, edit, complete, and delete tasks with persistent storage u
 ├── style.css    # Stylesheet (UI design)  
 └── README.md    # Project documentation  
 
-🖼️ Demo Screenshot
-
-(You can add a screenshot of your app here)
-
-![Task Manager Screenshot](screenshot.png)
-
 🛠️ Installation & Usage
 
 Clone this repository:
 
-git clone https://github.com/your-username/task-manager.git
+git clone https://github.com/cavemanhooligan/simple-task-manager.git
 
 
 Navigate into the project folder:
