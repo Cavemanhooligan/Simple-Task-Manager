@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #fff;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: #00ff95;
+}
+
+/* Input Form */
+#task-form {
+    display: flex;
+    margin-bottom: 20px;
+    background: #1f2a44;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: #243b55;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#task-input::placeholder {
+    color: #bbb;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    background: #00ff95;
+    color: #141e30;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00cc77;
+}
+
+/* Task List */
+.task {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #1f2a44;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.task:hover {
+    transform: translateY(-3px);
+}
+
+.task input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.task-text {
+    flex-grow: 1;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.task.completed {
+    opacity: 0.6;
+}
+
+.task.completed .task-text {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+/* Buttons inside task */
+.task button {
+    margin-left: 5px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+}
+
+.task button:nth-child(3) { /* Edit button */
+    background: #ffd93d;
+    color: #000;
+}
+
+.task button:nth-child(3):hover {
+    background: #e6c12f;
+}
+
+.task button:nth-child(4) { /* Delete button */
+    background: #ff4d4d;
+    color: #fff;
+}
+
+.task button:nth-child(4):hover {
+    background: #e63939;
+}
